@@ -118,45 +118,6 @@ setInterval(function(){
 },1000);
 
 
-// function nextQuestion() {
-//   var getOptions = document.getElementsByName("option");
-
-//   for(var i = 0 ; i < getOptions.length ; i++){
-//       if(getOptions[i].checked){
-//           var selectedAns = getOptions[i].value;
-//           var selectedQues = questions[index-1].question;
-//           var selectedOpt = questions[index-1][`option${selectedAns}`];
-//           var corrAns = questions[index-1][`corrAnswer`];
-
-//           if(selectedOpt == corrAns){
-//               score++
-//           }
-//       }
-//       getOptions[i].checked = false;
-//   }
-//   btn.disabled = true;
-
-//   if(index > questions.length - 1){
-//       Swal.fire({
-//           title: "Good job!",
-//           text: ((score/questions.length)*100).toFixed(2),
-//           icon: "success"
-//       });
-//       saveQuizResult(score); // Save the score to Firebase
-//   } else {
-//       ques.innerText = questions[index].question;
-//       opt1.innerText = questions[index].option1;
-//       opt2.innerText = questions[index].option2;
-//       opt3.innerText = questions[index].option3;
-//       index++;
-//       min = 1;
-//       sec=59;
-//   }
-// }
-
-// function target(){
-//     btn.disabled = false;
-// }
 
 
 function saveQuestionData(index, userAnswer, isCorrect) {
@@ -232,23 +193,3 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-// var arr = [{name:"Mudassir", age:"23"},abc, false];
-
-// localStorage.setItem("arr",JSON.stringify(arr));
-
-// var getData = localStorage.getItem("arr");
-
-// console.log(JSON.parse(getData));
-
-// function getValue(){
-//     var name = document.getElementById("name").value;
-//     var email = document.getElementById("email").value;
-
-//     var obj = {
-//         name,
-//         email,
-//     };
-
-//     arr.push(obj)
-//     localStorage.setItem("user")
-// }
