@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #0077FF;
+    /* background-color: #00d1b2; */
+}
+.header h1{
+    font-family: courgette;
+    font-size: 50px;
+    color: white;
+    font-weight: 800;
+}
+/* Style for the timer */
+#timer {
+    text-align: center; /* Center-align the timer */
+    font-family: courgette; /* Apply the Comfortaa font */
+    font-size: 50px; /* Adjust the font size */
+    color: white;
+    font-weight: 800;
+}
+/* .overlay {
+    background-image: url(img-1.png);
+    width: 100%;
+background-repeat: no-repeat;
+background-size: cover;
+text-align: center;
+z-index: -1;
+  }
+  .overlay .overlay-2{
+    width: 100%;
+    background-color:rgb(78 124 30 );
+    opacity: 0.9;
+    padding: 30px 0;
+  } */
+
+.main{
+    text-align: center;
+}
+p#ques {
+    color: white;
+    font-family: 'Courgette';
+    font-size: 24px;
+    margin: 5px;
+}
+.grp {
+    display: inline-block;
+    text-align: left;
+    background-color: white;
+    margin: 15px;
+    padding: 16px;
+    width: 500px;
+    border: 1px solid white;
+    border-radius: 8px;
+    font-family: comfortaa;
+}
+.grp:hover{
+    background-color: #e7e4e4;
+}
+button#btn {
+    width: 500px;
+    margin-left: 0px;
+    padding: 4px;
+    margin-top: 14px;
+    color: white;
+    font-family: comfortaa;
+    font-size: 25px;
+    font-weight: 900;
+    background-color: hsl(212, 100%, 50%);
+    border: 1px solid white;
+    border-radius: 50px;
+}
+button#btn:hover{
+    background-color: white;
+    color: #0077FF;
+}
+input.radio-item{
+    margin-right: 85px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .grp{
+        width: 275px;
+        margin:15px 0;
+        padding: 13px;
+    }
+    input.radio-item {
+        margin-right: 0px;
+    }
+    label {
+        display: inline;
+        font-size: 13px;
+        /* padding: 13px; */
+    }
+    button#btn{
+        width: 275px;
+    }
+}
+
+
+
+
+
+
+
